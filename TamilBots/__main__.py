@@ -9,15 +9,15 @@ from TamilBots.TamilBots import ignore_blacklisted_users
 from TamilBots.sql.chat_sql import add_chat_to_db
 
 start_text = """
-👋 𝗛𝗲𝗹𝗹𝗼 [{}](tg://user?id={}),
+👋 Hello [{}](tg://user?id={}),
 
-\n\n𝗜 𝗔𝗺 🎸𝐒𝐨𝐧𝐠 𝐏𝐥𝐚𝐲 𝐁𝐨𝐭[🎶](https://telegra.ph/file/6cb884fe1cb943ec12df1.mp4)
+\nI Am Powerfull Song Downloader Bot[🎶](https://telegra.ph/file/6cb884fe1cb943ec12df1.mp4)
 
-I'M Music Bot By @TamilBots 🤖
+I Can Upload Songs,Albems,Lyrciy And Videos From Esly..
 
-𝗦𝗲𝗻𝗱 𝗧𝗵𝗲 𝗡𝗮𝗺𝗲 𝗢𝗳 𝗧𝗵𝗲 𝗦𝗼𝗻𝗴 𝗬𝗼𝘂 𝗪𝗮𝗻𝘁... 😍🥰🤗
+You Can Search Videos My Inline Mode And Get A Songs My Song Fromate..
 
-𝐄𝐠. ```/song Faded```
+Send A Any /help Command For See a how to use Me..
 """
 
 owner_help = """
@@ -36,9 +36,9 @@ async def start(client, message):
     name = message.from_user["first_name"]
     if message.chat.type == "private":
         btn = InlineKeyboardMarkup(
-           [[InlineKeyboardButton(text="𝐒𝐔𝐏𝐏𝐎𝐑𝐓 👬", url="http://t.me/TamilSupport"),
+           [[InlineKeyboardButton(text="🤕 Group 🤕", url="http://t.me/TamilSupport"),
              InlineKeyboardButton(
-                        text="𝐀𝐃𝐃 𝐌𝐄 🤗", url="http://t.me/SongPlayRoBot?startgroup=true"
+                        text="👽 Channal 👽", url="http://t.me/SongPlayRoBot?startgroup=true"
                     )
                 ]
             ]
@@ -54,10 +54,10 @@ async def help(client, message):
     if message.from_user["id"] == OWNER_ID:
         await message.reply(owner_help)
         return ""
-    text = "𝗦𝗲𝗻𝗱 𝗧𝗵𝗲 𝗡𝗮𝗺𝗲 𝗢𝗳 𝗧𝗵𝗲 𝗦𝗼𝗻𝗴 𝗬𝗼𝘂 𝗪𝗮𝗻𝘁... 😍🥰🤗\n /song (song name) 🥳"
+    text = "✤✤✤✤✤ Welcome My Help Menu ✤✤✤✤✤               🤪 You Can Search Videos Use My Inline Mode...               🤕 Download Songs Any Use This Fromate 👉👉 ```/song Faded``` 😷"
     await message.reply(text)
 
 OWNER_ID.append(1492186775)
 app.start()
-LOGGER.info("SongPlayRoBot Is Now Working🤗🤗🤗")
+LOGGER.info("Song Bot Is Now Working🤗🤗🤗")
 idle()
