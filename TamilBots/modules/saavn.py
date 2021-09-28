@@ -7,7 +7,7 @@ import requests
 import wget
 from pyrogram import filters
 
-from DTSongBot import DTbot
+from TamilBots import DTbot
 
 def get_arg(message):
     msg = message.text
