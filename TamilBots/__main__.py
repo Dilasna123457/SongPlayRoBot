@@ -12,7 +12,7 @@ start_text = """
 👋 Hello [{}](tg://user?id={}),
 
 \nI Am Powerfull Song Downloader Bot[🎶](https://telegra.ph/file/6cb884fe1cb943ec12df1.mp4)
-
+my Developer is @Dilasnalithmantha
 I Can Upload Songs,Albems,Lyrciy And Videos From Esly..
 
 You Can Search Videos My Inline Mode And Get A Songs My Song Fromate..
